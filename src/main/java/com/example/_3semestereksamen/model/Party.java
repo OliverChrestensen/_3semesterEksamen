@@ -36,7 +36,7 @@ public class Party {
     private Kommune kommune;
 
     @OneToMany(orphanRemoval = true)
-    @JoinColumn (name = "Party_id")
+    @JoinColumn (name = "party_id")
     @JsonBackReference
     private Set<Candidate> candidateSet = new HashSet<>();
 

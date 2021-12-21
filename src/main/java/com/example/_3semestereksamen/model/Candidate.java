@@ -25,7 +25,7 @@ public class Candidate {
     private String candidateName;
 
     @ManyToOne(cascade = CascadeType.MERGE)
-    @JoinColumn(name = "Party_id")
+    @JoinColumn(name = "party_id")
     @JsonBackReference
     private Party Party;
 
